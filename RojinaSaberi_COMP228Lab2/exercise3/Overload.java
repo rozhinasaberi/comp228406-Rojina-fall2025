@@ -1,3 +1,5 @@
+package exercise3;
+
 public class Overload {
 
     // 1) average of two int numbers

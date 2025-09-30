@@ -1,3 +1,5 @@
+package exercise1;
+
 import javax.swing.JOptionPane;
 import java.util.Random;
 
