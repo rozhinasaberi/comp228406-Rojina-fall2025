@@ -1,0 +1,52 @@
+package mortgagemanagement;
+
+import java.text.NumberFormat;
+
+public abstract class Mortgage implements MortgageConstants {
+    protected String mortgageNumber;
+    protected String customerName;
+    protected double mortgageAmount;
+    protected double interestRate;
+    protected int termYears;
+
+    public Mortgage(String mortgageNumber, String customerName, double mortgageAmount,
+                    double currentPrimeRate, int requestedTermYears) {
+
+        if (mortgageAmount > MAX_MORTGAGE_AMOUNT) {
+            throw new IllegalArgumentException("Mortgage amount cannot exceed " +
+                NumberFormat.getCurrencyInstance().format(MAX_MORTGAGE_AMOUNT));
+        }
+
+        this.mortgageNumber = mortgageNumber;
+        this.customerName = customerName;
+        this.mortgageAmount = mortgageAmount;
+
+        if (requestedTermYears != SHORT_TERM && requestedTermYears != MEDIUM_TERM && requestedTermYears != LONG_TERM) {
+            this.termYears = SHORT_TERM;
+        } else {
+            this.termYears = requestedTermYears;
+        }
+
+        setInterestRateFromPrime(currentPrimeRate);
+    }
+
+    protected abstract void setInterestRateFromPrime(double currentPrimeRate);
+
+    public double getTotalOwed() {
+        return mortgageAmount + (mortgageAmount * interestRate * termYears);
+    }
+
+    public String getMortgageInfo() {
+        NumberFormat currencyFormat = NumberFormat.getCurrencyInstance();
+        NumberFormat percentFormat = NumberFormat.getPercentInstance();
+        percentFormat.setMinimumFractionDigits(2);
+
+        return "\n=== " + BANK_NAME + " Mortgage ===" +
+               "\nMortgage Number: " + mortgageNumber +
+               "\nCustomer Name  : " + customerName +
+               "\nAmount         : " + currencyFormat.format(mortgageAmount) +
+               "\nInterest Rate  : " + percentFormat.format(interestRate) +
+               "\nTerm (years)   : " + termYears +
+               "\nTotal Owed     : " + currencyFormat.format(getTotalOwed());
+    }
+}

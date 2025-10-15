@@ -1,2 +1,19 @@
 *.class
 .DS_Store
+# macOS
+.DS_Store
+
+# Java build artifacts
+*.class
+/out/
+/target/
+/bin/
+/build/
+
+# IDE
+.idea/
+.vscode/
+
+# local history
+.history/
+*.log
