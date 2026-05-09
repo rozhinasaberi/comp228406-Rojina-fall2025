@@ -1,109 +1,51 @@
-📘 COMP228 – Java Programming
-Rojina Saberi – Lab Assignments Repository
+# COMP228 Java Programming Labs
 
-Welcome to my COMP228 Java Programming repository.
-This repository contains all completed lab assignments for the course, organized by lab number and exercise.
+A repository of Java coursework and lab assignments covering core object-oriented programming concepts.
 
-Each lab includes Java source files, problem solutions, and object-oriented programming concepts such as classes, inheritance, interfaces, abstract classes, arrays, polymorphism, and exception handling.
+## What This Project Is About
 
-📂 Repository Structure
-comp228406-Rojina-fall2025/
-│
-├── RojinaSaberi_COMP228Lab1
-│   ├── LottoGame.java
-│   ├── Overload.java
-│   └── TestApp.java
-│
-├── RojinaSaberi_COMP228Lab2
-│   ├── exercise1/
-│   │   └── TestApp.java
-│   ├── exercise2/
-│   │   └── LottoGame.java
-│   └── exercise3/
-│       └── Overload.java
-│
-├── RojinaSaberi_COMP228Lab3
-│   ├── exercise1/ (Insurance + Life + Health)
-│   ├── exercise2/ (Game Tester Classes)
-│   └── exercise3/ (Mortgage Application)
-│
-├── RojinaSaberi_COMP228Lab4
-│   └── StudentInfoApp.java
-│
-└── Rojinasaberi_COMP228Lab6
-    └── AccountTest.java
+This repository collects completed lab work for COMP228. It is not one single application. Instead, it serves as a coursework archive that demonstrates progress through topics such as classes, methods, constructors, inheritance, polymorphism, arrays, and testing.
 
-🧠 What Each Lab Covers
-Lab 1 – Basic Java Classes & Methods
+This is a **Java coursework repository**.
 
-Method overloading
+## Topics Covered
 
-Simple classes and objects
+- basic Java classes and objects
+- method overloading
+- constructors and encapsulation
+- arrays and structured problem solving
+- inheritance and polymorphism
+- mortgage and insurance class hierarchies
+- student information applications
+- account and transaction testing
 
-Random number generation
+## Repository Structure
 
-Lab 2 – Constructors, Methods, and Arrays
+- `RojinaSaberi_COMP228Lab1/`
+- `RojinaSaberi_COMP228Lab2/`
+- `RojinaSaberi_COMP228Lab3/`
+- `RojinaSaberi_COMP228Lab4/`
+- `Rojinasaberi_COMP228Lab6/`
 
-Multi-exercise lab
+Each folder contains one or more Java exercises or small applications related to a specific lab.
 
-Practice with encapsulation and object creation
+## Tech Stack
 
-Lotto generator, method overloading, test applications
+- Java SE
 
-Lab 3 – Inheritance, Polymorphism, and OOP Design
+## Run A File Locally
 
-Insurance hierarchy
+Compile and run the file you want from its folder:
 
-Game tester inheritance
-
-Mortgage processing system
-
-Lab 4 – GUI / JavaFX (or Console-Based) Student Info App
-
-StudentInfoApp: handles basic user input and displays formatted output
-
-Lab 6 – Account & Transaction Testing
-
-Basic account testing class
-
-Demonstrates object interactions and unit testing logic
-
-Includes:
-
-AccountTest.java
-
-(Account.java & Transaction.java may be added as needed)
-
-🛠️ Technologies Used
-
-Java SE
-
-IntelliJ IDEA / VS Code / Terminal
-
-Git + GitHub for version control
-
-🚀 How to Run
-
-Clone the repository:
-
-git clone git@github.com:rozhinasaberi/comp228406-Rojina-fall2025.git
-
-
-Open in your IDE of choice.
-
-Navigate to the desired lab folder.
-
-Compile & run:
-
+```bash
 javac FileName.java
 java ClassName
+```
 
-✨ Purpose of This Repository
+## Purpose
 
-This repo serves as:
+This repository is best viewed as:
 
-A complete record of COMP228 lab submissions
-
-A reference for Java fundamentals and OOP concepts
-
-A showcase of learning progress throughout the semester
+- a record of course submissions
+- a reference for Java fundamentals
+- a showcase of object-oriented programming practice
